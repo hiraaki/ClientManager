@@ -1,13 +1,14 @@
 package Models;
 
+
 public class Invoice {
     private int id;
     private int clientID;
-    private String descrition;
+    private String description;
 
-    public Invoice(int clientID, String descrition) {
+    public Invoice(int clientID, String description) {
         this.clientID = clientID;
-        this.descrition = descrition;
+        this.description = description;
     }
 
     public int getId() {
@@ -26,11 +27,11 @@ public class Invoice {
         this.clientID = clientID;
     }
 
-    public String getDescrition() {
-        return descrition;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDescrition(String descrition) {
-        this.descrition = descrition;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
