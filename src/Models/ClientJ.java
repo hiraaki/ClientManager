@@ -3,8 +3,8 @@ package Models;
 public class ClientJ extends Client {
     private String Cnpj;
 
-    public ClientJ(String name, float spent, float debit, float winnings, String cnpj) {
-        super(name, spent, debit, winnings);
+    public ClientJ(String name, String cnpj) {
+        super(name);
         Cnpj = cnpj;
     }
 

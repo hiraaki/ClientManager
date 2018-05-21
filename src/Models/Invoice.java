@@ -5,7 +5,6 @@ public class Invoice {
     private int id;
     private int clientID;
     private String description;
-
     public Invoice(int clientID, String description) {
         this.clientID = clientID;
         this.description = description;
