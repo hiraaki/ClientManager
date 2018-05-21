@@ -16,6 +16,7 @@ public class ClientView {
              name= entrada.nextLine();
             System.out.println("Digite o CPF do Cliente:");
             String cpf= entrada.nextLine();
+
             return (new ClientF(name,cpf));
         }else if(op==2){
             System.out.println("Digite o nome da Empresa:");
@@ -23,7 +24,10 @@ public class ClientView {
             name= entrada.nextLine();
             System.out.println("Digite o CNPJ do Cliente:");
             String cnpj= entrada.nextLine();
+
             return (new ClientJ(name,cnpj));
+        }else{
+            return null;
         }
 
 
