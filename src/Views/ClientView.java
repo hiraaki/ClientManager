@@ -6,7 +6,7 @@ import Models.ClientJ;
 import java.util.Scanner;
 
 public class ClientView {
-    static Scanner entrada = new Scanner(System.in);
+    public static Scanner entrada = new Scanner(System.in);
     public Object  addClient(){
         System.out.println("Qual o tipo de cliente:\n\t(1)Pessoa Fisica\n\t(2):Pessoa Juridica\nOpção escolhida:");
         int op = entrada.nextInt();
@@ -34,5 +34,7 @@ public class ClientView {
     public void totalSpent(){
 
     }
-    public void
+    public void Debit(){
+
+    }
 }
