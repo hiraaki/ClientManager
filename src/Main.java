@@ -1,5 +1,3 @@
-package EscalonadorRB;
-
 import java.util.Scanner;
 
 public class Main {
