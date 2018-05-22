@@ -1,10 +1,11 @@
-package Models;
+package ClientManager.Models;
 
 
 public class Invoice {
     private int id;
     private int clientID;
     private String description;
+    private Client client;
     public Invoice(int clientID, String description) {
         this.clientID = clientID;
         this.description = description;

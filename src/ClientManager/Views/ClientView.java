@@ -1,7 +1,7 @@
-package Views;
+package ClientManager.Views;
 
-import Models.ClientF;
-import Models.ClientJ;
+import ClientManager.Models.ClientF;
+import ClientManager.Models.ClientJ;
 
 import java.util.Scanner;
 

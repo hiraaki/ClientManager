@@ -1,4 +1,4 @@
-package Models;
+package ClientManager.Models;
 
 public class ClientF  extends  Client{
     private String Cpf;

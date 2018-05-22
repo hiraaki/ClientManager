@@ -1,4 +1,4 @@
-package Views;
+package ClientManager.Views;
 
 public class InvoiceView {
 }

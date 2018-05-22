@@ -1,4 +1,4 @@
-package Controls;
+package ClientManager.Controls;
 
 public class InvoiceVewController {
     public void registerInvoiceF(){

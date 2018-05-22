@@ -1,4 +1,4 @@
-package Models;
+package ClientManager.Models;
 
 public class ClientJ extends Client {
     private String Cnpj;
