@@ -6,12 +6,15 @@ public class Invoice {
     private int clientID;
     private String description;
     private Client client;
-    private float cost;
+    private float spent;
+    private float totalcost;
 
-    public Invoice(int clientID, String description, float cost) {
+    public Invoice(int clientID, String description, Client client, float spent, float totalcost) {
         this.clientID = clientID;
         this.description = description;
-        this.cost = cost;
+        this.client = client;
+        this.spent = spent;
+        this.totalcost = totalcost;
     }
 
     public int getId() {
@@ -46,11 +49,19 @@ public class Invoice {
         this.client = client;
     }
 
-    public float getCost() {
-        return cost;
+    public float getSpent() {
+        return spent;
     }
 
-    public void setCost(float cost) {
-        this.cost = cost;
+    public void setSpent(float spent) {
+        this.spent = spent;
+    }
+
+    public float getTotalcost() {
+        return totalcost;
+    }
+
+    public void setTotalcost(float totalcost) {
+        this.totalcost = totalcost;
     }
 }
