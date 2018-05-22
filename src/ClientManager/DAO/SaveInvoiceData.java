@@ -11,10 +11,9 @@ public class SaveInvoiceData {
         this.invoices=new ArrayList<>();
     }
     public void addInvoice(Client client,Invoice invoice){
-        invoice.setClientID(client.getId());
+        invoice.setClientID(client.getCode());
         this.invoices.add(invoice);
         client.getServices().add(invoice);
-
     }
 
 }

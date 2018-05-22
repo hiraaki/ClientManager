@@ -6,9 +6,12 @@ public class Invoice {
     private int clientID;
     private String description;
     private Client client;
-    public Invoice(int clientID, String description) {
+    private float cost;
+
+    public Invoice(int clientID, String description, float cost) {
         this.clientID = clientID;
         this.description = description;
+        this.cost = cost;
     }
 
     public int getId() {
@@ -33,5 +36,21 @@ public class Invoice {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
+    }
+
+    public float getCost() {
+        return cost;
+    }
+
+    public void setCost(float cost) {
+        this.cost = cost;
     }
 }

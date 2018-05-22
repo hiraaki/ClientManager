@@ -9,13 +9,13 @@ public class ClientViewController {
     public void registerClientJ(String _name, String cnpj){
 
     }
-    public void  DeleteClientJ(ClientJ client){
+    public void  DeleteClientJ(String _name, String cnpj){
 
     }
-    public void registerClientF(ClientF client){
+    public void registerClientF(String _name, String cpf){
 
     }
-    public void  DeleteClientJ(ClientF client){
+    public void  DeleteClientF(String _name, String cpf){
 
     }
 
