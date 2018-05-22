@@ -12,8 +12,8 @@ public class SaveInvoiceData {
     ArrayList<Invoice> invoices;
     SaveClientData client;
 
-    public SaveInvoiceData(ArrayList<Invoice> invoices, SaveClientData client) {
-        this.invoices = invoices;
+    public SaveInvoiceData(SaveClientData client) {
+        this.invoices = new ArrayList<>();
         this.client = client;
     }
 
