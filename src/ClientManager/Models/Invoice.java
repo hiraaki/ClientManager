@@ -1,6 +1,8 @@
 package ClientManager.Models;
 
-
+/**
+ * Classe para manipulação de notas fiscais
+ */
 public class Invoice {
     private int id;
     private int clientID;
@@ -9,6 +11,14 @@ public class Invoice {
     private float spent;
     private float totalcost;
 
+    /**
+     * Esse é o construtor da classe Invoice
+     * @param clientID código do cliente
+     * @param description descrição do serviço prestado
+     * @param client cliente
+     * @param spent valor gasto no serviço
+     * @param totalcost custo total com mão de obra e finalização do serviço
+     */
     public Invoice(int clientID, String description, Client client, float spent, float totalcost) {
         this.clientID = clientID;
         this.description = description;

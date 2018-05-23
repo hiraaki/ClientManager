@@ -2,6 +2,9 @@ package ClientManager.Models;
 
 import java.util.ArrayList;
 
+/**Classe generica para cliente
+ *
+ */
 public class Client {
     private int code;
     private String name;
@@ -10,6 +13,11 @@ public class Client {
     private  float winnings;
     private ArrayList<Invoice> services;
 
+    /**
+     * Esse é o construtor da classe Client
+     *
+     * @param name é o nome do cliente
+     */
     public Client(String name) {
         this.spent=0;
         this.debit=0;

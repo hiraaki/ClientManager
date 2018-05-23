@@ -4,6 +4,9 @@ import ClientManager.DAO.SaveClientData;
 import ClientManager.Models.ClientF;
 import ClientManager.Models.ClientJ;
 
+/**
+ * Essa é a classe de comunicação entre a view e o DAO e futuramente fará a validação de entrada
+ */
 public class ClientViewController {
     SaveClientData data;
 
