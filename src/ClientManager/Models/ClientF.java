@@ -27,6 +27,15 @@ public class ClientF  extends  Client{
     public void setCpf(String cpf) {
         Cpf = cpf;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj==null) return false;
+        if (obj==this||obj.getClass()!=this.getClass()) return false;
+        ClientF F = (ClientF ) obj;
+        return F.hashCode() == this.hashCode();
+    }
+
     @Override
     public int hashCode(){
         return Objects.hashCode(this.getName()+ this.Cpf);

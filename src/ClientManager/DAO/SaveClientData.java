@@ -32,6 +32,7 @@ public class SaveClientData {
 
     public Object getClient(int hash){
         Object client=null;
+
         for(ClientF F : ClientesF){
             if(F.getCode()==hash){
                 client = F;
