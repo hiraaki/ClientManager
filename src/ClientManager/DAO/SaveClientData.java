@@ -18,6 +18,7 @@ public class SaveClientData {
         this.ClientesF.add(f);
     }
     public void saveClientJ(ClientJ J){
+        J.setCode(J.hashCode());
         this.ClientesJ.add(J);
     }
 
@@ -27,5 +28,20 @@ public class SaveClientData {
 
     public void deleteClientJ(ClientJ J){
         this.ClientesJ.remove(J);
+    }
+
+    public Object getClient(int hash){
+        Object client=null;
+        for(ClientF F : ClientesF){
+            if(F.getCode()==hash){
+                client = F;
+            }
+        }
+        for (ClientJ J : ClientesJ){
+            if(J.getCode()==hash){
+                client = J;
+            }
+        }
+        return client;
     }
 }

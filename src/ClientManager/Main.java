@@ -5,6 +5,7 @@ import ClientManager.Controls.InvoiceVewController;
 import ClientManager.DAO.SaveClientData;
 import ClientManager.DAO.SaveInvoiceData;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Main {
@@ -13,9 +14,12 @@ public class Main {
         SaveClientData ClientData = new SaveClientData();
         SaveInvoiceData InvoiceData = new SaveInvoiceData(ClientData);
         ClientViewController ClientController = new ClientViewController(ClientData);
-        InvoiceVewController InvoiceController = new InvoiceVewController();
+        InvoiceVewController InvoiceController = new InvoiceVewController(InvoiceData);
         ClientController.registerClientJ("Putão","Putão Ltda");
         ClientController.registerClientF("Putão","Putão cpf");
+        System.out.println(ClientData.getClient(Objects.hashCode("Putão"+"Putão Ltda"));
+        ClientData.getClient(Objects.hashCode("Putão"+"Putão cpf");
+
 
 
     }

@@ -1,5 +1,7 @@
 package ClientManager.Models;
 
+import java.util.Objects;
+
 /**
  * Classe que estende a classe cliente
  */
@@ -20,8 +22,11 @@ public class ClientJ extends Client {
         return Cnpj;
     }
 
-
     public void setCnpj(String cnpj) {
         Cnpj = cnpj;
+    }
+    @Override
+    public int hashCode(){
+        return Objects.hashCode(this.getName()+ this.Cnpj);
     }
 }

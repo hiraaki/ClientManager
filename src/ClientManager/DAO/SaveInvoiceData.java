@@ -22,9 +22,9 @@ public class SaveInvoiceData {
         this.invoices.add(invoice);
         client.getServices().add(invoice);
     }
+
     public void delete(Invoice in){
         int n = in.getClient().getCode();
-        Client c;
         for(ClientF cli: client.ClientesF){
             if(cli.getCode()==n){
                 cli.getServices().remove(in);
