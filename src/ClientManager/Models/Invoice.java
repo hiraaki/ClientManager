@@ -18,7 +18,7 @@ public class Invoice {
      * @param description descrição do serviço prestado
      * @param client cliente
      * @param spent valor gasto no serviço
-     * @param totalcost custo total com mão de obra e finalização do serviço
+     * @param winningPercentage porcentagem de ganho em cima de serviço prestado
      */
     public Invoice(int clientID, String description, Client client, float spent, float winningPercentage) {
         this.clientID = clientID;
