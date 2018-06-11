@@ -7,6 +7,9 @@ import ClientManager.Models.Invoice;
 
 import java.util.ArrayList;
 
+/**Classe que manipula e atualiza os  gastos, debitos e ganhos.
+ *
+ */
 public class SaveInvoiceData {
 
     ArrayList<Invoice> invoices;
@@ -19,6 +22,10 @@ public class SaveInvoiceData {
 
     public void addInvoice(Client client, Invoice invoice){
         invoice.setClientID(client.getCode());
+        invoice.setClient(client);
+        invoice.getClient().addSpent(invoice.getSpent());
+        invoice.getClient().addWinnings(invoice.getTotalcost()-invoice.getSpent());
+        client.updateBalance();
         this.invoices.add(invoice);
         client.getServices().add(invoice);
     }

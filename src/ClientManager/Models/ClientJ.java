@@ -6,7 +6,7 @@ import java.util.Objects;
  * Classe que estende a classe cliente
  */
 public class ClientJ extends Client {
-    private String Cnpj;
+    private String cnpj;
 
     /**
      * Esse é o construtor da classe cliente pessoa Jurídica
@@ -15,18 +15,18 @@ public class ClientJ extends Client {
      */
     public ClientJ(String name, String cnpj) {
         super(name);
-        Cnpj = cnpj;
+        this.cnpj = cnpj;
     }
 
     public String getCnpj() {
-        return Cnpj;
+        return cnpj;
     }
 
     public void setCnpj(String cnpj) {
-        Cnpj = cnpj;
+        cnpj = cnpj;
     }
     @Override
     public int hashCode(){
-        return Objects.hashCode(this.getName()+ this.Cnpj);
+        return Objects.hashCode(this.getName()+ this.cnpj);
     }
 }

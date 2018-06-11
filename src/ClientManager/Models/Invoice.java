@@ -1,7 +1,7 @@
 package ClientManager.Models;
 
 /**
- * Classe para manipulação de notas fiscais
+ * Classe para manipulação de gastos e ganhos
  */
 public class Invoice {
     private int id;
@@ -12,7 +12,7 @@ public class Invoice {
     private float totalcost;
 
     /**
-     * Esse é o construtor da classe Invoice
+     * Esse é o construtor da classe Invoice a qual contrrola a entrada e saida de  gastos
      * @param clientID código do cliente
      * @param description descrição do serviço prestado
      * @param client cliente

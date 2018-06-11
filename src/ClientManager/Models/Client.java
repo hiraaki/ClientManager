@@ -2,14 +2,14 @@ package ClientManager.Models;
 
 import java.util.ArrayList;
 
-/**Classe generica para cliente
+/**Classe generica para cliente, onde
  *
  */
 public class Client {
     private int code;
     private String name;
     private float spent;
-    private float debit;
+    private float balance;
     private  float winnings;
     private ArrayList<Invoice> services;
 
@@ -20,7 +20,7 @@ public class Client {
      */
     public Client(String name) {
         this.spent=0;
-        this.debit=0;
+        this.balance=0;
         this.winnings=0;
         this.name = name;
         this.services=new ArrayList<>();
@@ -46,23 +46,25 @@ public class Client {
         return spent;
     }
 
-    public void setSpent(float spent) {
-        this.spent = spent;
+    public void addSpent(float spent) {
+        this.spent += spent;
     }
 
-    public float getDebit() {
-        return debit;
+    public float getBalance() {
+        return balance;
     }
 
-    public void setDebit(float debit) {
-        this.debit = debit;
+    public void updateBalance() {
+
+        this.balance += this.spent-winnings;
+
     }
 
     public float getWinnings() {
         return winnings;
     }
 
-    public void setWinnings(float winnings) {
+    public void addWinnings(float winnings) {
         this.winnings = winnings;
     }
 

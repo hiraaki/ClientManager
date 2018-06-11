@@ -6,7 +6,7 @@ import java.util.Objects;
  *
  */
 public class ClientF  extends  Client{
-    private String Cpf;
+    private String cpf;
 
     /**
      * Construtor da classe cliente pessoa física
@@ -15,17 +15,17 @@ public class ClientF  extends  Client{
      */
     public ClientF(String name, String cpf) {
         super(name);
-        Cpf = cpf;
+        this.cpf = cpf;
     }
 
 
 
     public String getCpf() {
-        return Cpf;
+        return cpf;
     }
 
     public void setCpf(String cpf) {
-        Cpf = cpf;
+        cpf = cpf;
     }
 
     @Override
@@ -38,6 +38,6 @@ public class ClientF  extends  Client{
 
     @Override
     public int hashCode(){
-        return Objects.hashCode(this.getName()+ this.Cpf);
+        return Objects.hashCode(this.getName()+ this.cpf);
     }
 }
