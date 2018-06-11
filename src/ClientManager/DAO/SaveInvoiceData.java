@@ -24,7 +24,8 @@ public class SaveInvoiceData {
         invoice.setClientID(client.getCode());
         invoice.setClient(client);
         invoice.getClient().addSpent(invoice.getSpent());
-        invoice.getClient().addWinnings(invoice.getTotalcost()-invoice.getSpent());
+        invoice.setTotalcost(invoice.getSpent()+((invoice.getSpent()*invoice.getWinningPercentage())/100));
+        invoice.getClient().addWinnings(invoice.getTotalcost());
         client.updateBalance();
         this.invoices.add(invoice);
         client.getServices().add(invoice);

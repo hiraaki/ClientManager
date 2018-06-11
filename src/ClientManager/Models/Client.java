@@ -56,7 +56,7 @@ public class Client {
 
     public void updateBalance() {
 
-        this.balance += this.spent-winnings;
+        this.balance = this.spent-winnings;
 
     }
 

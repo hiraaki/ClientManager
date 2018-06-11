@@ -13,8 +13,8 @@ public class InvoiceVewController {
         InvoiceData = invoiceData;
     }
 
-    public void registerInvoiceF(int clientID, String description, Client client, float spent, float totalcost ){
-        InvoiceData.addInvoice(client,new Invoice(clientID, description, client, spent, totalcost) );
+    public void registerInvoiceF(int clientID, String description, Client client, float spent, float winningPercentage ){
+        InvoiceData.addInvoice(client,new Invoice(clientID, description, client, spent, winningPercentage ));
     }
     public void registerInvoice(Invoice in){
         InvoiceData.delete(in);

@@ -9,6 +9,7 @@ public class Invoice {
     private String description;
     private Client client;
     private float spent;
+    private float winningPercentage;
     private float totalcost;
 
     /**
@@ -19,12 +20,13 @@ public class Invoice {
      * @param spent valor gasto no serviço
      * @param totalcost custo total com mão de obra e finalização do serviço
      */
-    public Invoice(int clientID, String description, Client client, float spent, float totalcost) {
+    public Invoice(int clientID, String description, Client client, float spent, float winningPercentage) {
         this.clientID = clientID;
         this.description = description;
         this.client = client;
         this.spent = spent;
-        this.totalcost = totalcost;
+        this.winningPercentage=winningPercentage;
+        this.totalcost =this. winningPercentage-this.spent;
     }
 
     public int getId() {
@@ -65,6 +67,14 @@ public class Invoice {
 
     public void setSpent(float spent) {
         this.spent = spent;
+    }
+
+    public float getWinningPercentage() {
+        return winningPercentage;
+    }
+
+    public void setWinningPercentage(float winningPercentage) {
+        this.winningPercentage = winningPercentage;
     }
 
     public float getTotalcost() {
