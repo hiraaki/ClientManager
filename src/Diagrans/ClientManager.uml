@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>ClientManager</OriginalElement>
+  <nodes>
+    <node x="410.4372340425531" y="1049.0">ClientManager.Models.ClientJ</node>
+    <node x="205.87473404255311" y="0.0">ClientManager.Models.Invoice</node>
+    <node x="489.4372340425531" y="1268.0">ClientManager.DAO.SaveClientData</node>
+    <node x="607.4372340425532" y="1038.0">ClientManager.Models.ClientF</node>
+    <node x="1221.925" y="0.0">ClientManager.Views.InvoiceView</node>
+    <node x="458.59352836879435" y="1934.0">ClientManager.Main</node>
+    <node x="202.75" y="1513.0">ClientManager.DAO.SaveInvoiceData</node>
+    <node x="706.425" y="1692.0">ClientManager.Views.ClientView</node>
+    <node x="1005.925" y="0.0">ClientManager.Controls.ClientReportController</node>
+    <node x="0.0" y="1725.0">ClientManager.Controls.InvoiceVewController</node>
+    <node x="365.43723404255314" y="562.0">ClientManager.Models.Client</node>
+    <node x="617.4372340425532" y="1502.0">ClientManager.Controls.ClientViewController</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ClientManager.DAO.SaveClientData" target="ClientManager.Models.ClientF">
+      <point x="28.0" y="-92.0" />
+      <point x="629.4372340425531" y="1248.0" />
+      <point x="665.3372340425531" y="1248.0" />
+      <point x="-38.60000000000002" y="70.0" />
+    </edge>
+    <edge source="ClientManager.Main" target="ClientManager.Controls.InvoiceVewController">
+      <point x="-60.19999999999993" y="-25.5" />
+      <point x="484.3935283687944" y="1904.0" />
+      <point x="255.75" y="1904.0" />
+      <point x="85.25" y="48.0" />
+    </edge>
+    <edge source="ClientManager.Main" target="ClientManager.DAO.SaveInvoiceData">
+      <point x="-25.799999999999955" y="-25.5" />
+      <point x="518.7935283687945" y="1884.0" />
+      <point x="402.64742907801417" y="1884.0" />
+      <point x="402.64742907801417" y="1672.0" />
+      <point x="411.0" y="1672.0" />
+      <point x="89.25" y="59.0" />
+    </edge>
+    <edge source="ClientManager.Views.ClientView" target="ClientManager.Controls.ClientViewController">
+      <point x="-59.5" y="-81.0" />
+      <point x="765.925" y="1672.0" />
+      <point x="776.8122340425532" y="1672.0" />
+      <point x="31.875" y="70.0" />
+    </edge>
+    <edge source="ClientManager.DAO.SaveInvoiceData" target="ClientManager.Models.ClientF">
+      <point x="34.0" y="-59.0" />
+      <point x="355.75" y="1482.0" />
+      <point x="376.582535460993" y="1482.0" />
+      <point x="376.582535460993" y="1238.0" />
+      <point x="626.7372340425532" y="1238.0" />
+      <point x="-77.19999999999999" y="70.0" />
+    </edge>
+    <edge source="ClientManager.DAO.SaveInvoiceData" target="ClientManager.DAO.SaveClientData">
+      <point x="68.0" y="-59.0" />
+      <point x="389.75" y="1472.0" />
+      <point x="508.1039007092197" y="1472.0" />
+      <point x="-93.33333333333337" y="92.0" />
+    </edge>
+    <edge source="ClientManager.Main" target="ClientManager.DAO.SaveClientData">
+      <point x="8.600000000000023" y="-25.5" />
+      <point x="553.1935283687944" y="1874.0" />
+      <point x="595.9372340425531" y="1874.0" />
+      <point x="595.9372340425531" y="1482.0" />
+      <point x="582.7705673758865" y="1482.0" />
+      <point x="-18.66666666666663" y="92.0" />
+    </edge>
+    <edge source="ClientManager.DAO.SaveClientData" target="ClientManager.Models.ClientJ">
+      <point x="-28.0" y="-92.0" />
+      <point x="573.4372340425531" y="1228.0" />
+      <point x="534.3372340425531" y="1228.0" />
+      <point x="35.39999999999998" y="59.0" />
+    </edge>
+    <edge source="ClientManager.Controls.InvoiceVewController" target="ClientManager.Models.Invoice">
+      <point x="-136.39999999999998" y="-48.0" />
+      <point x="34.10000000000002" y="1662.0" />
+      <point x="137.95753546099303" y="1662.0" />
+      <point x="137.95753546099303" y="532.0" />
+      <point x="221.43723404255311" y="532.0" />
+      <point x="-108.9375" y="246.0" />
+    </edge>
+    <edge source="ClientManager.Models.Client" target="ClientManager.Models.Invoice">
+      <point x="-33.37500000000006" y="-213.0" />
+      <point x="465.5622340425531" y="532.0" />
+      <point x="377.0622340425531" y="532.0" />
+      <point x="46.6875" y="246.0" />
+    </edge>
+    <edge source="ClientManager.DAO.SaveInvoiceData" target="ClientManager.Models.ClientJ">
+      <point x="0.0" y="-59.0" />
+      <point x="321.75" y="1482.0" />
+      <point x="324.5648936170212" y="1482.0" />
+      <point x="324.5648936170212" y="1228.0" />
+      <point x="428.13723404255313" y="1228.0" />
+      <point x="-70.79999999999995" y="59.0" />
+    </edge>
+    <edge source="ClientManager.Main" target="ClientManager.Models.ClientF">
+      <point x="77.39999999999996" y="-25.5" />
+      <point x="621.9935283687944" y="1914.0" />
+      <point x="954.925" y="1914.0" />
+      <point x="954.925" y="1198.0" />
+      <point x="781.1372340425531" y="1198.0" />
+      <point x="77.19999999999999" y="70.0" />
+    </edge>
+    <edge source="ClientManager.DAO.SaveInvoiceData" target="ClientManager.Models.Client">
+      <point x="-34.0" y="-59.0" />
+      <point x="287.75" y="1482.0" />
+      <point x="293.0648936170212" y="1482.0" />
+      <point x="293.0648936170212" y="1018.0" />
+      <point x="432.18723404255314" y="1018.0" />
+      <point x="-66.75" y="213.0" />
+    </edge>
+    <edge source="ClientManager.Controls.ClientViewController" target="ClientManager.DAO.SaveClientData">
+      <point x="-95.625" y="-70.0" />
+      <point x="649.3122340425532" y="1482.0" />
+      <point x="657.4372340425531" y="1482.0" />
+      <point x="56.0" y="92.0" />
+    </edge>
+    <edge source="ClientManager.Main" target="ClientManager.Controls.ClientViewController">
+      <point x="42.999999999999986" y="-25.5" />
+      <point x="587.5935283687943" y="1894.0" />
+      <point x="656.8747340425531" y="1894.0" />
+      <point x="656.8747340425531" y="1672.0" />
+      <point x="649.3122340425532" y="1672.0" />
+      <point x="-95.625" y="70.0" />
+    </edge>
+    <edge source="ClientManager.Models.Invoice" target="ClientManager.Models.Client">
+      <point x="77.8125" y="246.0" />
+      <point x="408.1872340425531" y="522.0" />
+      <point x="532.3122340425531" y="522.0" />
+      <point x="33.37499999999994" y="-213.0" />
+    </edge>
+    <edge source="ClientManager.Models.ClientJ" target="ClientManager.Models.Client">
+      <point x="-44.25" y="-59.0" />
+      <point x="454.6872340425531" y="1018.0" />
+      <point x="476.68723404255314" y="1018.0" />
+      <point x="-22.25" y="213.0" />
+    </edge>
+    <edge source="ClientManager.Controls.InvoiceVewController" target="ClientManager.DAO.SaveInvoiceData">
+      <point x="136.39999999999998" y="-48.0" />
+      <point x="306.9" y="1672.0" />
+      <point x="292.0" y="1672.0" />
+      <point x="-29.75" y="59.0" />
+    </edge>
+    <edge source="ClientManager.Controls.InvoiceVewController" target="ClientManager.Models.Client">
+      <point x="5.6843418860808015E-14" y="-48.0" />
+      <point x="170.50000000000006" y="1672.0" />
+      <point x="159.95753546099303" y="1672.0" />
+      <point x="159.95753546099303" y="1008.0" />
+      <point x="387.68723404255314" y="1008.0" />
+      <point x="-111.25" y="213.0" />
+    </edge>
+    <edge source="ClientManager.Models.ClientF" target="ClientManager.Models.Client">
+      <point x="48.24999999999994" y="-70.0" />
+      <point x="752.1872340425531" y="1008.0" />
+      <point x="610.1872340425531" y="1008.0" />
+      <point x="111.24999999999994" y="213.0" />
+    </edge>
+    <edge source="ClientManager.Controls.ClientViewController" target="ClientManager.Models.ClientF">
+      <point x="95.625" y="-70.0" />
+      <point x="840.5622340425532" y="1482.0" />
+      <point x="826.55" y="1482.0" />
+      <point x="826.55" y="1208.0" />
+      <point x="742.5372340425531" y="1208.0" />
+      <point x="38.599999999999966" y="70.0" />
+    </edge>
+    <edge source="ClientManager.Main" target="ClientManager.Models.ClientJ">
+      <point x="-8.600000000000023" y="-25.5" />
+      <point x="535.9935283687944" y="1874.0" />
+      <point x="478.9372340425531" y="1874.0" />
+      <point x="478.9372340425531" y="1228.0" />
+      <point x="463.5372340425531" y="1228.0" />
+      <point x="-35.39999999999998" y="59.0" />
+    </edge>
+    <edge source="ClientManager.Controls.ClientViewController" target="ClientManager.Models.ClientJ">
+      <point x="31.875" y="-70.0" />
+      <point x="776.8122340425532" y="1482.0" />
+      <point x="803.1872340425532" y="1482.0" />
+      <point x="803.1872340425532" y="1218.0" />
+      <point x="569.737234042553" y="1218.0" />
+      <point x="70.79999999999995" y="59.0" />
+    </edge>
+    <edge source="ClientManager.DAO.SaveInvoiceData" target="ClientManager.Models.Invoice">
+      <point x="-68.0" y="-59.0" />
+      <point x="253.75" y="1482.0" />
+      <point x="281.14742907801417" y="1482.0" />
+      <point x="281.14742907801417" y="542.0" />
+      <point x="314.8122340425531" y="542.0" />
+      <point x="-15.5625" y="246.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.2878048780487805" x="583.4802697302696" y="216.44886363636363" />
+  <SelectedNodes>
+    <node>ClientManager.Main</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,5 @@
+ClientManager
+ClientManager.Controls
+ClientManager.DAO
+ClientManager.Models
+ClientManager.Views
